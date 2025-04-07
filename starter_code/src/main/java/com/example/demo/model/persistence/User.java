@@ -3,15 +3,18 @@ package com.example.demo.model.persistence;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
+
 
 
 @Entity
@@ -26,7 +29,17 @@ public class User {
 	@Column(nullable = false, unique = true)
 	@JsonProperty
 	private String username;
-	
+
+	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+	@Column(nullable = false)
+	private String password;
+	public String getPassword(){
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "cart_id", referencedColumnName = "id")
 	@JsonIgnore
@@ -54,5 +67,8 @@ public class User {
 
 	public void setUsername(String username) {
 		this.username = username;
-	}	
+	}
+	
+	
+	
 }

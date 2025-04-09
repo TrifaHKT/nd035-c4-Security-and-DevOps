@@ -1,0 +1,239 @@
+2025-04-09T16:37:15.990+08:00  INFO 52203 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests using Java 21.0.6 with PID 52203 (started by trifacheung in /Users/trifacheung/Desktop/trifa_practice/udacity/nd035-c4-Security-and-DevOps/starter_code)
+2025-04-09T16:37:15.992+08:00  INFO 52203 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-04-09T16:37:16.358+08:00  INFO 52203 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-09T16:37:16.391+08:00  INFO 52203 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+2025-04-09T16:37:16.892+08:00  INFO 52203 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-09T16:37:16.958+08:00  INFO 52203 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-09T16:37:16.989+08:00  INFO 52203 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-09T16:37:17.247+08:00  INFO 52203 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-09T16:37:17.272+08:00  INFO 52203 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-09T16:37:17.493+08:00  INFO 52203 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bootapp user=SA
+2025-04-09T16:37:17.494+08:00  INFO 52203 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-09T16:37:17.515+08:00  WARN 52203 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-09T16:37:18.239+08:00  INFO 52203 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-09T16:37:18.287+08:00  INFO 52203 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T16:37:18.529+08:00  INFO 52203 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-04-09T16:37:18.545+08:00  WARN 52203 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-09T16:37:18.944+08:00  INFO 52203 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bootapp'
+2025-04-09T16:37:19.018+08:00  INFO 52203 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-09T16:37:19.018+08:00  INFO 52203 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-09T16:37:19.019+08:00  INFO 52203 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-04-09T16:37:19.032+08:00  INFO 52203 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 3.311 seconds (process running for 4.113)
+2025-04-09T16:37:19.565+08:00  INFO 52203 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T16:37:19.733+08:00  INFO 52203 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T16:37:20.044+08:00  INFO 52203 --- [main] c.e.demo.controllers.CartController      : AddToCart request successes: TestUser1
+2025-04-09T16:37:20.139+08:00  INFO 52203 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T16:37:20.145+08:00  INFO 52203 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T16:37:20.150+08:00  INFO 52203 --- [main] c.e.demo.controllers.ItemController      : GetItemById request successes: 1
+2025-04-09T16:37:20.155+08:00  INFO 52203 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T16:37:20.243+08:00  INFO 52203 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T16:37:20.252+08:00  INFO 52203 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T16:37:20.259+08:00  INFO 52203 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T16:37:20.745+08:00  INFO 52203 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: testUser1
+2025-04-09T16:37:20.748+08:00 ERROR 52203 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures: testUser1
+2025-04-09T16:37:20.751+08:00 ERROR 52203 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures: testUser1
+2025-04-09T16:37:20.867+08:00  INFO 52203 --- [main] c.e.demo.controllers.CartController      : RemoveFromCart request successes: testUser1
+2025-04-09T16:37:20.871+08:00 ERROR 52203 --- [main] c.e.demo.controllers.CartController      : AddToCart request failures, User not found: testUser1
+2025-04-09T16:37:20.874+08:00 ERROR 52203 --- [main] c.e.demo.controllers.CartController      : RemoveFromCart request failures, User not found: testUser1
+2025-04-09T16:37:20.877+08:00  INFO 52203 --- [main] c.e.demo.controllers.CartController      : AddToCart request successes: testUser1
+2025-04-09T16:37:20.995+08:00  INFO 52203 --- [main] c.e.demo.controllers.OrderController     : SubmitOrder order request successes: testUser1
+2025-04-09T16:37:20.998+08:00 ERROR 52203 --- [main] c.e.demo.controllers.OrderController     : GetOrdersForUser request failures, User not found: testUser1
+2025-04-09T16:37:21.008+08:00 ERROR 52203 --- [main] c.e.demo.controllers.OrderController     : SubmitOrder request failures, User not found: testUser1
+2025-04-09T16:37:21.034+08:00  INFO 52203 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T16:37:21.042+08:00  INFO 52203 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-09T16:37:21.187+08:00  INFO 52203 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-09T16:56:32.003+08:00  INFO 65746 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests using Java 21.0.6 with PID 65746 (started by trifacheung in /Users/trifacheung/Desktop/trifa_practice/udacity/nd035-c4-Security-and-DevOps/starter_code)
+2025-04-09T16:56:32.005+08:00  INFO 65746 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-04-09T16:56:32.366+08:00  INFO 65746 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-09T16:56:32.398+08:00  INFO 65746 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+2025-04-09T16:56:32.915+08:00  INFO 65746 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-09T16:56:32.994+08:00  INFO 65746 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-09T16:56:33.034+08:00  INFO 65746 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-09T16:56:33.277+08:00  INFO 65746 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-09T16:56:33.302+08:00  INFO 65746 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-09T16:56:33.515+08:00  INFO 65746 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bootapp user=SA
+2025-04-09T16:56:33.516+08:00  INFO 65746 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-09T16:56:33.539+08:00  WARN 65746 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-09T16:56:34.243+08:00  INFO 65746 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-09T16:56:34.288+08:00  INFO 65746 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T16:56:34.552+08:00  INFO 65746 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-04-09T16:56:34.567+08:00  WARN 65746 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-09T16:56:34.976+08:00  INFO 65746 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bootapp'
+2025-04-09T16:56:35.036+08:00  INFO 65746 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-09T16:56:35.037+08:00  INFO 65746 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-09T16:56:35.037+08:00  INFO 65746 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-04-09T16:56:35.049+08:00  INFO 65746 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 3.357 seconds (process running for 4.33)
+2025-04-09T16:56:35.571+08:00  INFO 65746 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T16:56:35.744+08:00  INFO 65746 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T16:56:36.046+08:00  INFO 65746 --- [main] c.e.demo.controllers.CartController      : AddToCart request successes: TestUser1
+2025-04-09T16:56:36.133+08:00  INFO 65746 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T16:56:36.138+08:00  INFO 65746 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T16:56:36.141+08:00  INFO 65746 --- [main] c.e.demo.controllers.ItemController      : GetItemById request successes: 1
+2025-04-09T16:56:36.145+08:00  INFO 65746 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T16:56:36.226+08:00  INFO 65746 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T16:56:36.234+08:00  INFO 65746 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T16:56:36.239+08:00  INFO 65746 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T16:56:36.601+08:00  INFO 65746 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: testUser1
+2025-04-09T16:56:36.604+08:00 ERROR 65746 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures: testUser1
+2025-04-09T16:56:36.607+08:00 ERROR 65746 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures: testUser1
+2025-04-09T16:56:36.705+08:00  INFO 65746 --- [main] c.e.demo.controllers.CartController      : RemoveFromCart request successes: testUser1
+2025-04-09T16:56:36.708+08:00 ERROR 65746 --- [main] c.e.demo.controllers.CartController      : AddToCart request failures, User not found: testUser1
+2025-04-09T16:56:36.711+08:00 ERROR 65746 --- [main] c.e.demo.controllers.CartController      : RemoveFromCart request failures, User not found: testUser1
+2025-04-09T16:56:36.714+08:00  INFO 65746 --- [main] c.e.demo.controllers.CartController      : AddToCart request successes: testUser1
+2025-04-09T16:56:36.807+08:00  INFO 65746 --- [main] c.e.demo.controllers.OrderController     : SubmitOrder order request successes: testUser1
+2025-04-09T16:56:36.809+08:00 ERROR 65746 --- [main] c.e.demo.controllers.OrderController     : GetOrdersForUser request failures, User not found: testUser1
+2025-04-09T16:56:36.811+08:00 ERROR 65746 --- [main] c.e.demo.controllers.OrderController     : SubmitOrder request failures, User not found: testUser1
+2025-04-09T16:56:36.831+08:00  INFO 65746 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T16:56:36.833+08:00  INFO 65746 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-09T16:56:36.952+08:00  INFO 65746 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-09T17:07:04.341+08:00  INFO 73294 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests using Java 21.0.6 with PID 73294 (started by trifacheung in /Users/trifacheung/Desktop/trifa_practice/udacity/nd035-c4-Security-and-DevOps/starter_code)
+2025-04-09T17:07:04.342+08:00  INFO 73294 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-04-09T17:07:04.711+08:00  INFO 73294 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-09T17:07:04.749+08:00  INFO 73294 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2025-04-09T17:07:05.211+08:00  INFO 73294 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-09T17:07:05.265+08:00  INFO 73294 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-09T17:07:05.292+08:00  INFO 73294 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-09T17:07:05.521+08:00  INFO 73294 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-09T17:07:05.547+08:00  INFO 73294 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-09T17:07:05.759+08:00  INFO 73294 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bootapp user=SA
+2025-04-09T17:07:05.760+08:00  INFO 73294 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-09T17:07:05.783+08:00  WARN 73294 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-09T17:07:06.508+08:00  INFO 73294 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-09T17:07:06.559+08:00  INFO 73294 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T17:07:06.847+08:00  INFO 73294 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-04-09T17:07:06.863+08:00  WARN 73294 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-09T17:07:07.279+08:00  INFO 73294 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bootapp'
+2025-04-09T17:07:07.337+08:00  INFO 73294 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-09T17:07:07.338+08:00  INFO 73294 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-09T17:07:07.338+08:00  INFO 73294 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-04-09T17:07:07.349+08:00  INFO 73294 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 3.255 seconds (process running for 4.041)
+2025-04-09T17:07:07.851+08:00  INFO 73294 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T17:07:08.018+08:00  INFO 73294 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T17:07:08.323+08:00  INFO 73294 --- [main] c.e.demo.controllers.CartController      : AddToCart request successes: TestUser1
+2025-04-09T17:07:08.412+08:00  INFO 73294 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T17:07:08.417+08:00  INFO 73294 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T17:07:08.420+08:00  INFO 73294 --- [main] c.e.demo.controllers.ItemController      : GetItemById request successes: 1
+2025-04-09T17:07:08.423+08:00  INFO 73294 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T17:07:08.510+08:00  INFO 73294 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T17:07:08.519+08:00  INFO 73294 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T17:07:08.525+08:00  INFO 73294 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T17:07:08.913+08:00  INFO 73294 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: testUser1
+2025-04-09T17:07:08.916+08:00 ERROR 73294 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures: testUser1
+2025-04-09T17:07:08.919+08:00 ERROR 73294 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures: testUser1
+2025-04-09T17:07:09.008+08:00  INFO 73294 --- [main] c.e.demo.controllers.CartController      : RemoveFromCart request successes: testUser1
+2025-04-09T17:07:09.011+08:00 ERROR 73294 --- [main] c.e.demo.controllers.CartController      : AddToCart request failures, User not found: testUser1
+2025-04-09T17:07:09.014+08:00 ERROR 73294 --- [main] c.e.demo.controllers.CartController      : RemoveFromCart request failures, User not found: testUser1
+2025-04-09T17:07:09.016+08:00  INFO 73294 --- [main] c.e.demo.controllers.CartController      : AddToCart request successes: testUser1
+2025-04-09T17:07:09.089+08:00  INFO 73294 --- [main] c.e.demo.controllers.OrderController     : SubmitOrder order request successes: testUser1
+2025-04-09T17:07:09.092+08:00 ERROR 73294 --- [main] c.e.demo.controllers.OrderController     : GetOrdersForUser request failures, User not found: testUser1
+2025-04-09T17:07:09.093+08:00 ERROR 73294 --- [main] c.e.demo.controllers.OrderController     : SubmitOrder request failures, User not found: testUser1
+2025-04-09T17:07:09.111+08:00  INFO 73294 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T17:07:09.113+08:00  INFO 73294 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-09T17:07:09.235+08:00  INFO 73294 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-09T17:07:15.144+08:00  INFO 73448 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 73448 (/Users/trifacheung/Desktop/trifa_practice/udacity/nd035-c4-Security-and-DevOps/starter_code/target/auth-course-0.0.1-SNAPSHOT.jar started by trifacheung in /Users/trifacheung/Desktop/trifa_practice/udacity/nd035-c4-Security-and-DevOps/starter_code)
+2025-04-09T17:07:15.146+08:00  INFO 73448 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-04-09T17:07:15.411+08:00  INFO 73448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-09T17:07:15.435+08:00  INFO 73448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 4 JPA repository interfaces.
+2025-04-09T17:07:15.851+08:00  INFO 73448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-09T17:07:15.860+08:00  INFO 73448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-09T17:07:15.860+08:00  INFO 73448 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-04-09T17:07:15.877+08:00  INFO 73448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-09T17:07:15.877+08:00  INFO 73448 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 701 ms
+2025-04-09T17:07:15.899+08:00  INFO 73448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-09T17:07:16.017+08:00  INFO 73448 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bootapp user=SA
+2025-04-09T17:07:16.019+08:00  INFO 73448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-09T17:07:16.026+08:00  INFO 73448 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bootapp'
+2025-04-09T17:07:16.097+08:00  INFO 73448 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-09T17:07:16.134+08:00  INFO 73448 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-09T17:07:16.177+08:00  INFO 73448 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-09T17:07:16.358+08:00  INFO 73448 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-09T17:07:16.387+08:00  WARN 73448 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-09T17:07:16.889+08:00  INFO 73448 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-09T17:07:16.921+08:00  INFO 73448 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T17:07:17.105+08:00  INFO 73448 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-04-09T17:07:17.194+08:00  WARN 73448 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-09T17:07:17.526+08:00  INFO 73448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-09T17:07:17.537+08:00  INFO 73448 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 2.644 seconds (process running for 2.914)
+2025-04-09T17:07:23.523+08:00  INFO 73448 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-09T17:07:23.524+08:00  INFO 73448 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-09T17:07:23.525+08:00  INFO 73448 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-09T17:07:23.727+08:00  INFO 73448 --- [http-nio-8080-exec-2] c.e.demo.controllers.UserController      : CreateUser request successes: Jason
+2025-04-09T17:07:47.714+08:00  INFO 73448 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T17:07:47.719+08:00  INFO 73448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-09T17:07:47.723+08:00  INFO 73448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-09T17:09:38.989+08:00  INFO 75177 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests using Java 21.0.6 with PID 75177 (started by trifacheung in /Users/trifacheung/Desktop/trifa_practice/udacity/nd035-c4-Security-and-DevOps/starter_code)
+2025-04-09T17:09:38.990+08:00  INFO 75177 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-04-09T17:09:39.349+08:00  INFO 75177 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-09T17:09:39.386+08:00  INFO 75177 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2025-04-09T17:09:39.869+08:00  INFO 75177 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-09T17:09:39.925+08:00  INFO 75177 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-09T17:09:39.955+08:00  INFO 75177 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-09T17:09:40.198+08:00  INFO 75177 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-09T17:09:40.223+08:00  INFO 75177 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-09T17:09:40.442+08:00  INFO 75177 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bootapp user=SA
+2025-04-09T17:09:40.443+08:00  INFO 75177 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-09T17:09:40.466+08:00  WARN 75177 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-09T17:09:41.176+08:00  INFO 75177 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-09T17:09:41.233+08:00  INFO 75177 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T17:09:41.541+08:00  INFO 75177 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-04-09T17:09:41.563+08:00  WARN 75177 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-09T17:09:41.962+08:00  INFO 75177 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bootapp'
+2025-04-09T17:09:42.025+08:00  INFO 75177 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-04-09T17:09:42.025+08:00  INFO 75177 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-04-09T17:09:42.025+08:00  INFO 75177 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-04-09T17:09:42.037+08:00  INFO 75177 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 3.28 seconds (process running for 4.057)
+2025-04-09T17:09:42.551+08:00  INFO 75177 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T17:09:42.720+08:00  INFO 75177 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T17:09:43.014+08:00  INFO 75177 --- [main] c.e.demo.controllers.CartController      : AddToCart request successes: TestUser1
+2025-04-09T17:09:43.103+08:00  INFO 75177 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T17:09:43.108+08:00  INFO 75177 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T17:09:43.111+08:00  INFO 75177 --- [main] c.e.demo.controllers.ItemController      : GetItemById request successes: 1
+2025-04-09T17:09:43.115+08:00  INFO 75177 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T17:09:43.198+08:00  INFO 75177 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: TestUser1
+2025-04-09T17:09:43.207+08:00  INFO 75177 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T17:09:43.214+08:00  INFO 75177 --- [main] c.e.demo.controllers.ItemController      : GetItems request successes
+2025-04-09T17:09:43.600+08:00  INFO 75177 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes: testUser1
+2025-04-09T17:09:43.603+08:00 ERROR 75177 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures: testUser1
+2025-04-09T17:09:43.606+08:00 ERROR 75177 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures: testUser1
+2025-04-09T17:09:43.696+08:00  INFO 75177 --- [main] c.e.demo.controllers.CartController      : RemoveFromCart request successes: testUser1
+2025-04-09T17:09:43.699+08:00 ERROR 75177 --- [main] c.e.demo.controllers.CartController      : AddToCart request failures, User not found: testUser1
+2025-04-09T17:09:43.702+08:00 ERROR 75177 --- [main] c.e.demo.controllers.CartController      : RemoveFromCart request failures, User not found: testUser1
+2025-04-09T17:09:43.704+08:00  INFO 75177 --- [main] c.e.demo.controllers.CartController      : AddToCart request successes: testUser1
+2025-04-09T17:09:43.774+08:00  INFO 75177 --- [main] c.e.demo.controllers.OrderController     : SubmitOrder order request successes: testUser1
+2025-04-09T17:09:43.776+08:00 ERROR 75177 --- [main] c.e.demo.controllers.OrderController     : GetOrdersForUser request failures, User not found: testUser1
+2025-04-09T17:09:43.778+08:00 ERROR 75177 --- [main] c.e.demo.controllers.OrderController     : SubmitOrder request failures, User not found: testUser1
+2025-04-09T17:09:43.796+08:00  INFO 75177 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T17:09:43.798+08:00  INFO 75177 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-09T17:09:43.940+08:00  INFO 75177 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-09T17:09:49.750+08:00  INFO 75314 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 75314 (/Users/trifacheung/Desktop/trifa_practice/udacity/nd035-c4-Security-and-DevOps/starter_code/target/auth-course-0.0.1-SNAPSHOT.jar started by trifacheung in /Users/trifacheung/Desktop/trifa_practice/udacity/nd035-c4-Security-and-DevOps/starter_code)
+2025-04-09T17:09:49.753+08:00  INFO 75314 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-04-09T17:09:50.185+08:00  INFO 75314 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-09T17:09:50.229+08:00  INFO 75314 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 4 JPA repository interfaces.
+2025-04-09T17:09:50.731+08:00  INFO 75314 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-09T17:09:50.739+08:00  INFO 75314 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-09T17:09:50.739+08:00  INFO 75314 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-04-09T17:09:50.755+08:00  INFO 75314 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-09T17:09:50.756+08:00  INFO 75314 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 961 ms
+2025-04-09T17:09:50.777+08:00  INFO 75314 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-09T17:09:50.991+08:00  INFO 75314 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bootapp user=SA
+2025-04-09T17:09:50.991+08:00  INFO 75314 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-09T17:09:50.999+08:00  INFO 75314 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bootapp'
+2025-04-09T17:09:51.062+08:00  INFO 75314 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-09T17:09:51.102+08:00  INFO 75314 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-09T17:09:51.127+08:00  INFO 75314 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-09T17:09:51.286+08:00  INFO 75314 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-09T17:09:51.313+08:00  WARN 75314 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-09T17:09:52.413+08:00  INFO 75314 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-09T17:09:52.452+08:00  INFO 75314 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T17:09:52.835+08:00  INFO 75314 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-04-09T17:09:52.917+08:00  WARN 75314 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-09T17:09:53.290+08:00  INFO 75314 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-09T17:09:53.302+08:00  INFO 75314 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 3.826 seconds (process running for 4.098)
+2025-04-09T17:10:04.783+08:00  INFO 75314 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-09T17:10:04.783+08:00  INFO 75314 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-09T17:10:04.786+08:00  INFO 75314 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-09T17:10:05.006+08:00  INFO 75314 --- [http-nio-8080-exec-1] c.e.demo.controllers.UserController      : CreateUser request successes: Jason
+2025-04-09T17:10:15.107+08:00 ERROR 75314 --- [http-nio-8080-exec-3] c.e.d.security.UserDetailsServiceImpl    : Exception: User not found: King
+2025-04-09T17:20:16.216+08:00  INFO 75314 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-09T17:20:16.221+08:00  INFO 75314 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-09T17:20:16.226+08:00  INFO 75314 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

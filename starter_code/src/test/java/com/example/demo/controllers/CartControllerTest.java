@@ -75,6 +75,21 @@ public class CartControllerTest {
         assertEquals(1L, cart.getItems().get(0).getId());
     }
 
+    @Test 
+    public void giveNullUser_whenAddToCart_thenReturnNotFound() throws Exception {
+
+        when(userRepo.findByUsername("testUser1")).thenReturn(null);
+
+        ModifyCartRequest request = new ModifyCartRequest();
+        request.setUsername("testUser1");
+        request.setItemId(1L);
+        request.setQuantity(1);
+
+        ResponseEntity<Cart> response = cartController.addTocart(request);
+        assertNotNull(response);
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+    }
+
     @Test
     public void givenUserCartWithThreeItems_whenRemoveFromCart_thenRemoveItem() throws Exception {
 
@@ -95,6 +110,21 @@ public class CartControllerTest {
         assertEquals(0L, cart.getId());
         assertEquals(0L, cart.getUser().getId());
         assertEquals(2, cart.getItems().size());
+    }
+
+    @Test
+    public void giveNullUser_whenRemoveFromCart_thenReturnNotFound() throws Exception {
+
+        when(userRepo.findByUsername("testUser1")).thenReturn(null);
+
+        ModifyCartRequest request = new ModifyCartRequest();
+        request.setUsername("testUser1");
+        request.setItemId(1L);
+        request.setQuantity(1);
+
+        ResponseEntity<Cart> response = cartController.removeFromcart(request);
+        assertNotNull(response);
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
     }
   
 }

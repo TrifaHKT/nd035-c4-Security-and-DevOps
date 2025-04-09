@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.apache.catalina.connector.Response;
@@ -72,5 +73,23 @@ public class OrderControllerTest {
 
         assertEquals("testUser1", order.getUser().getUsername());
         assertEquals(3, order.getItems().size());
+    }
+
+    @Test
+    public void giveNullUser_whenSubmit_thenReturnNotFound() {
+        when(userRepo.findByUsername("testUser1")).thenReturn(null);
+
+        ResponseEntity<UserOrder> response = orderController.submit("testUser1");
+        assertNotNull(response);
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+    }
+
+    @Test
+    public void giveNullUser_whenCheckHistory_thenReturnNotFound() {
+        when(userRepo.findByUsername("testUser1")).thenReturn(null);
+
+        ResponseEntity<List<UserOrder>> response = orderController.getOrdersForUser("testUser1");
+        assertNotNull(response);
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
     }
 }
